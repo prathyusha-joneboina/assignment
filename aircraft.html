@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <h1 class='heading'>Welcome to the Aircraft Trading Platform</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#Home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#Login">Login</a>
+                    <a class="nav-link" href="#SignUp">Sign Up</a>
+                </div>
+        </nav>
+        <section id="signup">
+            <h1 id='SignUp'>Sign Up</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <input type="submit" class='btn btn-primary' value="Sign Up">
+                <p>Don't have account? <span>please Sign Up</span></p>
+            </form>
+        </section>
+
+        <section id="login">
+            <h1 id='Login'>Log In</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <input type="submit" class='btn btn-primary' value="Log In">
+                <p>Do you have account? <span>please LogIn</span></p>
+            </form>
+        </section>
+
+        <section id="intro">
+            <h1 id='Home'>About Us</h1>
+            <p>Company services and customer testimonials.</p>
+        </section>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Client testimonials and platform overview.</p>
+        </section>
+        <section id="buyer-dashboard">
+            <h2>Buyer Dashboard</h2>
+            <ul>
+                <li> <a href="#Product-1">Product 1</a></li>
+                <li><a href="#Product-2">Product 2</a></li>
+                <li><a href="#Product-3">Product 3</a></li>
+            </ul>
+            <input type="text" placeholder="Search for a product">
+            <button class='btn btn-secondary'>Add to Cart</button>
+            <button>Filter by Seller</button>
+        </section>
+        <section id="seller-dashboard">
+            <h2>Seller Dashboard</h2>
+            <ul>
+                <li>Product 1</li>
+                <li>Product 2</li>
+                <li>Product 3</li>
+            </ul>
+            <input type="text" placeholder="Add a new product">
+            <button class='btn btn-success'>Add Product</button>
+            <button>Respond to Orders</button>
+        </section>
+        <section id="messaging">
+            <h2>Messaging</h2>
+            <textarea placeholder="Type your message"></textarea>
+            <button>Send Message</button>
+        </section>
+        <footer>
+            <p>&copy; 2022 Aircraft Cabin Components Trading Platform. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+        <section id="overview">
+            <h2>Website Overview</h2>
+            <p>Welcome to our trading platform. Here, you can browse and purchase aircraft cabin components from various sellers.</p>
+        </section>
+        <section id="buyer-dashboard">
+            <div class="product">
+                <h1 id="Product-1">Product 1</h1>
+                <p>Description: Aircraft cabin component 1</p>
+                <p>Price: $100</p>
+                <button class='btn btn-primary'>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h1 id="Product-2">Product 2</h1>
+                <p>Description: Aircraft cabin component 2</p>
+                <p>Price: $150</p>
+                <button class='btn btn-primary'>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h1 id="Product-3">Product 3</h1>
+                <p>Description: Aircraft cabin component 3</p>
+                <p>Price: $220</p>
+                <button class='btn btn-primary'>Add to Cart</button>
+            </div>
+        </section>
+        <section id="product-search">
+            <h2>Product Search</h2>
+            <input type="text" id="search" name="search" placeholder="Search for products">
+            <button>Search</button>
+        </section>
+        <section id="add-quantity">
+            <h2>Add Quantity</h2>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <button>Add</button>
+        </section>
+        <section id="add-to-cart">
+            <h2>Add to Cart</h2>
+            <button>Add to Cart</button>
+        </section>
+        <section id="filter-by-seller">
+            <h2>Filter by Seller</h2>
+            <select id="seller" name="seller">
+                <option value="seller1">Seller 1</option>
+                <option value="seller2">Seller 2</option>
+            </select>
+            <button>Filter</button>
+        </section>
+        <section id="buyer-query">
+            <h2>Buyer Query</h2>
+            <textarea id="query" name="query" rows="4" cols="50" placeholder="Enter your query"></textarea>
+            <button>Send</button>
+        </section>
+        <section id="optimized-checkout">
+            <h2>Optimized Checkout</h2>
+            <p>Proceed to checkout for a seamless purchasing experience.</p>
+            <button class='btn btn-primary'>Checkout</button>
+        </section>
+        <section id="payment-processing">
+            <h2>Payment Processing</h2>
+            <p>Securely process your payment for the purchased products.</p>
+            <button class='btn btn-primary'>Process Payment</button>
+        </section>
+    </div>
+</body>
+
+</html>
